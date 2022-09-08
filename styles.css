@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root{
+
+    --color-primary: #000000;
+    --color-secundary: #3D0000;
+    --color-secundary2: #1E5128;
+    --color-secundary3: #04293A;
+    --color-contacto: #7D0633;
+    --color-form: #950101;
+    --color-focus: #FF0000;
+    --color-ancor: #FF0000;
+    --color-logo: #FA7D09;
+
+    /* Este zindex es el maximo */
+    /* --zindex-navbar: 5000; */
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-ancor);
+    font-weight: 700;
+}
+
+nav{
+    background: var(--color-secundary);
+    display: flex;   
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    /* gap: 1em; */
+}
+
+.logo{
+    color: var(--color-logo);
+    font-size: 1.5em;
+    padding-top: 1em;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    
+}
+
+.contenido{
+    background: var(--color-secundary3);
+    width: auto;
+    height: 500px;
+    color: #FA7D09;
+}
+
+.marcas{
+    background: var(--color-secundary2);
+    width: auto;
+    height: 500px;
+    color: #FA7D09;
+}
+
+.catalogo{
+    background: var(--color-form);
+    width: auto;
+    height: 500px;
+    color: #FA7D09;
+}
+
+.contacto{
+    background: var(--color-contacto);
+    width: auto;
+    height: 500px;
+    color: #FA7D09;
+}
