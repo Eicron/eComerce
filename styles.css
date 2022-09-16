@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700;1,900&display=swap');
 
 :root{
 
     --color-primary: #000000;
-    --color-secundary: #3D0000;
+    --color-secundary: rgba(61, 0, 0, 0.9);
     --color-secundary2: #1E5128;
     --color-secundary3: #04293A;
     --color-contacto: #7D0633;
@@ -11,6 +11,7 @@
     --color-focus: #FF0000;
     --color-ancor: #FF0000;
     --color-logo: #FA7D09;
+    --color-white: white ;
 
     /* Este zindex es el maximo */
     /* --zindex-navbar: 5000; */
@@ -28,6 +29,7 @@ html {
 }
 ul {
     list-style: none;
+    
 }
 
 a{
@@ -39,25 +41,31 @@ a{
 nav{
     background: var(--color-secundary);
     display: flex;   
-    flex-direction: column;
+    flex-direction: row;
     align-items:center;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap; 
     position: fixed;
     width: 100%;
     /* gap: 1em; */
 }
 
 .logo{
+    min-width: 160px;
     color: var(--color-logo);
-    font-size: 1.5em;
-    padding-top: 1em;
+    font-size: 1.5em;  
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 700;
+
 }
 
 .navbar{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1em;
     padding: 1em;
+    flex-wrap: nowrap;
     
 }
 
@@ -69,22 +77,127 @@ nav{
 }
 
 .marcas{
-    background: var(--color-secundary2);
+    background: var(--color-secundary3);
     width: auto;
-    height: 500px;
+    padding-top:160px ;
+    /* height: 500px; */
     color: #FA7D09;
+}
+
+.marcas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding-bottom: 1em;
+}
+
+.msj-marca{
+    text-align: center;
+    font-size: 1.5em;  
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 700;
+    padding: 1em;
+}
+
+.box-marcas{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    
 }
 
 .catalogo{
-    background: var(--color-form);
-    width: auto;
-    height: 500px;
+    display: flex;
+    flex-direction: column;        
+    align-items: center;
+    background: var(--color-primary);
+    gap: 1em;
     color: #FA7D09;
 }
 
+.msj-moto{
+    text-align: center;
+    font-size: 1.5em;  
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 700;
+    padding: 1em;
+
+}
+
+.box-motos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.titulo{
+    font-size: 1.5em;  
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 700;
+    padding: 0.5em;
+}
 .contacto{
     background: var(--color-contacto);
     width: auto;
-    height: 500px;
+    /* height: 500px; */
     color: #FA7D09;
 }
+
+.tarjeta{
+    
+    background: white;
+}
+
+.tarjetaNegra{
+    background: black;
+}
+
+.marca{
+    width: 250px;
+    height: 150px;
+}
+
+.tarjetaMoto{
+    width:350px;
+    height: 500px;
+    background: var(--color-white);
+    margin: 1em;
+    color: var(--color-primary)
+}
+
+.titulo{
+    background: green;
+}
+
+.descripcion{
+    padding: 1em;
+    background: red;
+}
+
+.moto{
+    width: 350px;
+    height: 300px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+}
+
+
+
+
