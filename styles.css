@@ -7,6 +7,8 @@
     --color-secundary2: #1E5128;
     --color-secundary3: #04293A;
     --color-contacto: #7D0633;
+    --color-titulo: #A5C9CA;
+    --color-titulo-fondo: #2C3333;
     --color-form: #950101;
     --color-focus: #FF0000;
     --color-ancor: #FF0000;
@@ -147,6 +149,9 @@ nav{
     font-family: 'Lato';
     font-style: italic;
     font-weight: 700;
+    color: var(--color-titulo);
+    text-align: center;
+
     padding: 0.5em;
 }
 .contacto{
@@ -179,12 +184,17 @@ nav{
 }
 
 .titulo{
-    background: green;
+    background: var(--color-titulo-fondo);
 }
 
 .descripcion{
-    padding: 1em;
+    padding: 2em 1em 2em 1em;
     background: red;
+    
+}
+
+.precio{
+    font-size: 1.5em;
 }
 
 .moto{
